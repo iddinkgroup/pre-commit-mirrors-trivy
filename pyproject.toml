@@ -12,4 +12,4 @@ authors = [
 dependencies = []
 
 [project.scripts]
-trivy-wrapper = "trivy_wrapper.cli:main"
+trivy-wrapper = "trivy-wrapper.cli:main"
