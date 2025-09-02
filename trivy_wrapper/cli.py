@@ -51,8 +51,8 @@ def ensure_trivy_installed():
 
 def main():
     ensure_trivy_installed()
-    cmd = [str(TRIVY_BIN)] + sys.argv[1:]
-    sys.exit(subprocess.call(cmd))
+    result = subprocess.run([TRIVY_BIN] + sys.argv[1:])
+    sys.exit(result.returncode)
 
 
 if __name__ == "__main__":
