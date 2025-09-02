@@ -1,0 +1,17 @@
+- id: trivy-fs
+  name: trivy filesystem scan
+  description: Run Trivy to scan the repository for vulnerabilities
+  entry: trivy fs .
+  language: golang
+  types: [file]
+  pass_filenames: false
+  additional_dependencies: ["github.com/aquasecurity/trivy/cmd/trivy@v0.65.0"]
+
+- id: trivy-config
+  name: trivy config scan
+  description: Run Trivy to scan IaC configuration files for misconfigurations
+  entry: trivy config .
+  language: golang
+  types: [yaml, json, toml]
+  pass_filenames: false
+  additional_dependencies: ["github.com/aquasecurity/trivy/cmd/trivy@v0.65.0"]
