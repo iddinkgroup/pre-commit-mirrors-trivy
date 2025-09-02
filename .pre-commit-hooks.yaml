@@ -1,13 +1,15 @@
 - id: trivy-fs
   name: trivy filesystem scan
   description: Run Trivy to scan the repository filesystem for vulnerabilities
-  entry: trivy-wrapper fs .
+  entry: trivy-wrapper fs
   language: python
   pass_filenames: false
+  args: []
 
 - id: trivy-config
   name: trivy config scan
   description: Run Trivy to scan IaC configuration files for misconfigurations
-  entry: trivy-wrapper config .
+  entry: trivy-wrapper config
   language: python
   pass_filenames: false
+  args: []
