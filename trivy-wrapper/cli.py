@@ -6,7 +6,7 @@ import urllib.request
 import tarfile
 from pathlib import Path
 
-TRIVY_VERSION = "0.56.2"  # pin the version here
+TRIVY_VERSION = "0.65.0"  # pin the version here
 CACHE_DIR = Path.home() / ".cache" / "trivy-wrapper" / TRIVY_VERSION
 TRIVY_BIN = CACHE_DIR / "trivy"
 
