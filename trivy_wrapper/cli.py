@@ -43,4 +43,17 @@ def ensure_trivy_installed():
     urllib.request.urlretrieve(url, tar_path)
 
     with tarfile.open(tar_path, "r:gz") as tar:
-        tar.extracta
+        tar.extractall(CACHE_DIR)
+
+    # make sure it's executable
+    TRIVY_BIN.chmod(0o755)
+
+
+def main():
+    ensure_trivy_installed()
+    cmd = [str(TRIVY_BIN)] + sys.argv[1:]
+    sys.exit(subprocess.call(cmd))
+
+
+if __name__ == "__main__":
+    main()
