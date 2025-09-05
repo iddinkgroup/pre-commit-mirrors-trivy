@@ -2,6 +2,8 @@
   name: trivy filesystem scan
   description: Run Trivy to scan the repository filesystem for vulnerabilities
   entry: trivy fs
+  args:
+    - .
   language: python
   pass_filenames: false
   require_serial: true
@@ -10,6 +12,8 @@
   name: trivy config scan
   description: Run Trivy to scan IaC configuration files for misconfigurations
   entry: trivy config
+  args:
+    - .
   language: python
   pass_filenames: false
   require_serial: true

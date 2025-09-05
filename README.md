@@ -17,6 +17,10 @@ Sample `.pre-commit-config.yaml`:
   rev: v0.66.0
   hooks:
     - id: trivy-fs
+      args:
+        - --exit-code=1 # Example: set exit with code 1
+        - --debug # Example: enable debug output
+        - . # Example: scan current directory (provide DIR as last argument if `args` are used)
     - id: trivy-config
 ```
 
