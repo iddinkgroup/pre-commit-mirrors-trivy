@@ -4,6 +4,7 @@
   entry: trivy fs
   language: python
   pass_filenames: false
+  require_serial: true
 
 - id: trivy-config
   name: trivy config scan
@@ -11,4 +12,4 @@
   entry: trivy config
   language: python
   pass_filenames: false
-
+  require_serial: true
