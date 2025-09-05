@@ -1,11 +1,22 @@
 [![build status](https://github.com/GaukeT/pre-commit-mirrors-trivy/actions/workflows/main.yml/badge.svg)](https://github.com/GaukeT/pre-commit-mirrors-trivy/actions/workflows/main.yml)
 
-# pre-commit-mirrors-trivy
+# trivy-py
 
-pre-commit hook that mirrors the trivy for usage as pre-commit language
+A python wrapper to provide a pip-installable [trivy] binary.
 
 Internally this package provides a convenient way to download the pre-built
 trivy binary for your particular platform.
+
+### installation
+
+```bash
+pip install trivy-py
+```
+
+### usage
+
+After installation, the `trivy` binary should be available in your
+environment (or `trivy.exe` on windows).
 
 ### As a pre-commit hook
 
