@@ -1,3 +1,5 @@
+[![build status](https://github.com/GaukeT/pre-commit-mirrors-trivy/actions/workflows/main.yml/badge.svg)](https://github.com/GaukeT/pre-commit-mirrors-trivy/actions/workflows/main.yml)
+
 # pre-commit-mirrors-trivy
 
 pre-commit hook that mirrors the trivy for usage as pre-commit language
