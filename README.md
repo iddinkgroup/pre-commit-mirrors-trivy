@@ -1,4 +1,4 @@
-[![build status](https://github.com/GaukeT/pre-commit-mirrors-trivy/actions/workflows/main.yml/badge.svg)](https://github.com/GaukeT/pre-commit-mirrors-trivy/actions/workflows/main.yml)
+[![build status](https://github.com/iddinkgroup/pre-commit-mirrors-trivy/actions/workflows/main.yml/badge.svg)](https://github.com/GaukeT/pre-commit-mirrors-trivy/actions/workflows/main.yml)
 
 # trivy-py
 
@@ -24,8 +24,8 @@ See [pre-commit] for instructions
 
 Sample `.pre-commit-config.yaml`:
 ```yaml
-- repo: https://github.com/GaukeT/pre-commit-mirrors-trivy
-  rev: v0.66.0
+- repo: https://github.com/iddinkgroup/pre-commit-mirrors-trivy
+  rev: v0.66.0.2
   hooks:
     - id: trivy-fs
       args:
