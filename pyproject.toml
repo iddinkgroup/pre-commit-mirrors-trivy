@@ -9,7 +9,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "trivy_py"
 authors = [
-    {name = "Gauke Teijema", email = "info@gauket.nl"},
+    { name = "Gauke Teijema", email = "info@gauket.nl" },
 ]
 description = "Python wrapper around invoking trivy (https://trivy.dev/)"
 readme = "README.md"
@@ -27,4 +27,4 @@ dynamic = [
 ]
 
 [project.urls]
-Repository = "https://github.com/GaukeT/pre-commit-mirrors-trivy"
+Repository = "https://github.com/iddinkgroup/pre-commit-mirrors-trivy"
